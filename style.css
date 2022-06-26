@@ -1,0 +1,196 @@
+/* CSS RESETS */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+    margin: 0;
+}
+
+/*
+  3. Allow percentage-based heights in the application
+*/
+html,
+body {
+    height: 100%;
+}
+
+/*
+  Typographic tweaks!
+  4. Add accessible line-height
+  5. Improve text rendering
+*/
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+/*
+  6. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+    display: block;
+    max-width: 100%;
+}
+
+/*
+  7. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/*
+  8. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    overflow-wrap: break-word;
+}
+
+/*
+
+#root,
+#__next {
+    isolation: isolate;
+}
+
+/* Main css */
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600&display=swap');
+body{
+    font-family: 'Space Grotesk',sans-serif;
+    background-color: #02010A;
+    color: #e9ecef;
+}
+
+h1{
+    font-size: 2.0rem;
+    font-weight: 600;
+    
+}
+.highlight{
+    color: #20C2F7;
+}
+
+/* layout */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+}
+.wrapper{
+    background: linear-gradient(-45deg, #02010A, #04052E, #033444, #070118);
+        background-size: 400% 400%;
+        animation: gradient 30s ease infinite;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+        align-items: center;
+
+}
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+.main{
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    width: 43rem;
+}
+.sentence{
+    height: 5rem;
+}
+h1,p{
+    text-align: center;
+}
+
+
+/*links*/
+.link {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 10px; 
+    color: #fff;
+}
+.link__wrapper{
+    position: relative;
+        display: block;
+        padding: 20px 0;
+}
+.hover:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 3px;
+    transform: scaleX(0);
+    background-color: #20C2F7;
+    transition: transform 0.3s;
+}
+
+.hover:hover:after {
+    transform: scaleX(1);
+}
+
+footer{
+    flex: 1;
+    align-items: flex-end;
+    justify-content: center;
+    margin-bottom: 1rem;
+
+
+}
+.uit{
+    font-size: 1.5rem;
+    color: #20C2F7;
+    padding-right: 2rem;
+    text-align: center;
+}
+.social{
+    text-align: center;
+}
+
+.profile-photo{
+    border-radius: 50%;
+    width:150px;
+    margin: 5px auto
+}
