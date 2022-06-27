@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../week-1-task-api-Sirjoseph94"
+		},
+		{
+			"path": "../mini-challenges-1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "mini-challenges-3"
+	}
+}
