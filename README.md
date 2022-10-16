@@ -1,9 +1,7 @@
-# week-one-sq011B - Portfolio
+# Simple About Me website
 
-## Problem Description:
+A simple website build with HTML, CSS and JavaScript.
 
-You are to create a Personal Portfolio using HTML, CSS and JavaScript.
+This is a good project to get started with the basics of web design.
 
-Make your design pretty and responsive.
-
-When you are done, host your application on heroku or netlify (submit link should be added to your turned in field on Teams)
+Contributions are welcome
