@@ -16,7 +16,7 @@
 */
 html,
 body {
-    height: 100%;
+    height: 100vh;
 }
 
 /*
@@ -89,26 +89,12 @@ h1{
     color: #20C2F7;
 }
 
-/* layout */
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-}
-
-.column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-}
 .wrapper{
     background: linear-gradient(-45deg, #02010A, #04052E, #033444, #070118);
         background-size: 400% 400%;
         animation: gradient 30s ease infinite;
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     height: 100vh;
     width: 100vw;
     justify-content: center;
@@ -123,22 +109,27 @@ h1{
     50% {
         background-position: 100% 50%;
     }
-
+    
     100% {
         background-position: 0% 50%;
     }
 }
+
 .main{
-    /* align-items: center;
-    justify-content: center; */
-    display: flex;
-    flex-direction: column;
-    padding: 2rem;
-    width: 43rem;
+    margin: 5px;
 }
+
+.profile-photo{
+    border-radius: 50%;
+    width:150px;
+    height: 150px;
+    margin: 5px auto
+}
+
 .sentence{
     min-height: 5rem;
 }
+
 h1,p{
     text-align: center;
 }
@@ -148,14 +139,14 @@ h1,p{
 .link {
     display: inline-block;
     position: relative;
-    font-weight: 400;
+    font-weight: 600;
     text-decoration: none;
-    margin-right: 10px; 
+    padding: 5px; 
     color: #fff;
 }
 .link__wrapper{
    text-align: center;
-        padding: 20px 0;
+        margin: 20px 0;
 }
 .hover:after {
     content: '';
@@ -174,29 +165,21 @@ h1,p{
     transform: scaleX(1);
 }
 
-footer{
-    flex: 1;
-    align-items: flex-end;
-    justify-content: center;
-    margin-bottom: 1rem;
-
-
+.social{
+    text-align: center;
 }
 .uit{
     font-size: 1.5rem;
     color: #20C2F7;
-    padding-right: 2rem;
-    text-align: center;
+    padding: 0.5rem;
 }
 .uit:hover{
     color: #fff;
 }
-.social{
-    text-align: center;
-}
 
-.profile-photo{
-    border-radius: 50%;
-    width:150px;
-    margin: 5px auto
+
+footer{
+    position: fixed;
+    bottom: 5px;
+    justify-content: center;
 }
